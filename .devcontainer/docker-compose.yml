@@ -10,6 +10,7 @@ services:
     volumes:
       - ../:/workspace
     command: sleep infinity
+    image: "${DEVCONTAINER_NAME}:latest"
     depends_on:
       - db
     environment:
